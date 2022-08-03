@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align:center">Weather Search</h1>
+        <form action="" class="input">
+            <input type="text" class="city" placeholder="enter the city" reqiured>
+            <br>
+            <button type="button" class="search" onclick="getweatherinfo()" style="text-align:center">search</button>
+
+        </form>
+        <div class="getinfo">
+            <h3 class="cityname"></h3>
+            <h3 class="temperature"></h3>
+            <h3 class="climaticcondition"></h3>
+            <h3 class="wind"></h3>
+
+        </div>
+
+        <style>
+            body {
+                position: relative;
+    /* background-image: url(./snow.jpg); */
+    background-color: rgb(59, 112, 59);
+    background-repeat: no-repeat;
+            }
+
+            .container {
+                max-width: auto;
+                padding: 10px;
+                height: auto;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, 50%);
+                background-color: rgb(157, 206, 235);
+                border: solid blue 2px;
+                border-radius: 15px;
+            }
+
+            .input {
+                background-color: beige;
+                padding: 0.5rem;
+                border: solid beige 3px;
+                border-radius: 1.5rem;
+                display:flex;
+                flex-direction: column;
+                flex-direction: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .city {
+                padding: 0.5rem;
+                border: solid rgba(129, 124, 124, 0.733) 2px;
+                border-radius: 1.3rem;
+                margin: 0.3rem 0rem;
+                background-color: bisque;
+            }
+
+            .city:hover {
+                background-color: rgba(129, 124, 124, 0.733);
+                border: solid black 2px;
+                color: white
+            }
+
+            .search {
+                background-color: rgba(9, 121, 83, 0.527);
+                margin: 0rem 0.4 rem;
+                padding: 10px 14px;
+                margin: 6px 57px;
+                border-radius: 61px;
+                transition: background-color 0.5s ease;
+
+            }
+
+            .search:hover {
+                background-color: rgb(255, 115, 0);
+
+            }
+            .getinfo{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: azure;
+                padding: 8px 27px;
+                margin: 19px 4px;
+                border-radius: 29px;
+            }
+            .container::after{
+                max-width: auto;
+                padding: 10px;
+                height: auto;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, 50%);
+                background-color: rgb(157, 206, 235);
+                border: solid blue 2px;
+                border-radius: 15px;
+            }
+        </style>
+        <script src="script1.js"></script>
+
+
+
+    </div>
+</body>
+
+</html>
